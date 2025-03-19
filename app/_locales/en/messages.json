@@ -767,6 +767,9 @@
   "blockies": {
     "message": "Blockies"
   },
+  "borrowed": {
+    "message": "Borrowed"
+  },
   "boughtFor": {
     "message": "Bought for"
   },
@@ -4546,6 +4549,9 @@
   "revokeSimulationDetailsDesc": {
     "message": "You're removing someone's permission to spend tokens from your account."
   },
+  "reward": {
+    "message": "Reward"
+  },
   "rpcNameOptional": {
     "message": "RPC Name (Optional)"
   },
@@ -5407,6 +5413,9 @@
   "stake": {
     "message": "Stake"
   },
+  "staked": {
+    "message": "Staked"
+  },
   "stateLogError": {
     "message": "Error in retrieving state logs."
   },
@@ -5535,6 +5544,9 @@
   },
   "suggestedTokenName": {
     "message": "Suggested name:"
+  },
+  "supplied": {
+    "message": "Supplied"
   },
   "support": {
     "message": "Support"
