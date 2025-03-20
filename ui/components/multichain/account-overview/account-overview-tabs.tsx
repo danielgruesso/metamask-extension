@@ -161,7 +161,7 @@ export const AccountOverviewTabs = ({
         )}
         {showDefi && (
           <Tab
-            name={'DeFi'}
+            name={t('defi')}
             tabKey="defi"
             data-testid="account-overview__defi-tab"
             {...tabProps}

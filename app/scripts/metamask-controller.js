@@ -399,7 +399,9 @@ import {
   getCapabilities,
   processSendCalls,
 } from './lib/transaction/eip5792';
-import { DeFiPositionsController } from '../../ui/DeFiPositionsController/DeFiPositionsController';
+
+
+import { DeFiPositionsController } from '@metamask/assets-controllers';
 
 export const METAMASK_CONTROLLER_EVENTS = {
   // Fired after state changes that impact the extension badge (unapproved msg count)
@@ -797,10 +799,6 @@ export default class MetamaskController extends EventEmitter {
       }),
       chainId: this.#getGlobalChainId(),
     });
-
-    console.log('this.defiPositionsController oioi', this.defiPositionsController);
-
-
 
     const nftControllerMessenger = this.controllerMessenger.getRestricted({
       name: 'NftController',
