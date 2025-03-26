@@ -511,6 +511,8 @@ export default class MetamaskController extends EventEmitter {
           },
         });
       }
+
+      // Add Solana notification here
     });
 
     this.appMetadataController = new AppMetadataController({
