@@ -77,14 +77,9 @@ jobs:
   test-e2e-swap-playwright:
     runs-on: ubuntu-latest
     container:
-      image: cimg/node:22.14-browsers
+      image: mcr.microsoft.com/playwright:v1.50.0-noble
     continue-on-error: true # soft launch
     steps:
-      - name: Install dependencies
-        run: |
-          sudo apt-get update && sudo apt-get install zstd
-          sudo corepack enable
-
       - name: Checkout and setup environment
         uses: MetaMask/action-checkout-and-setup@v1
         with:

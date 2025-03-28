@@ -7,6 +7,7 @@ on:
       - master
       - Version-v*
       - trigger-ci*
+      - feat/gha-webpack-e2e-2
   pull_request:
     types:
       - opened
@@ -243,6 +244,7 @@ jobs:
     needs:
       - needs-e2e
       - prep-build-test-browserify
+      - prep-build-dist-browserify
     if: ${{ needs.needs-e2e.outputs.needs-e2e == 'true' }}
     uses: ./.github/workflows/e2e-chrome.yml
 
